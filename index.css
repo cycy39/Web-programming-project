@@ -1,0 +1,33 @@
+/*Header*/
+
+#header {
+    width:100%; height:150px;
+    background-color:#CFA0E9;
+}
+
+/*Img in the header */
+.one {
+
+}
+.two{
+
+}
+.three{
+
+}
+
+/*Contenu*/
+
+#contenu img{
+    width:100%; height:300px;
+}
+/*Footer*/
+
+#div footer{
+    width:100%; height:120px;
+    background-color:
+}
+
+#footer{
+    width:100%; height:120px;background-color:darkgrey;
+}
