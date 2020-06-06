@@ -9,8 +9,22 @@
   background-color: gray;
 }
 
-#burger-menu{
-  display: block;
+@media (max-width: 800px) {
+  #list-container {
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  #list-container {
+    display: flex;
+  }
+  #burger-menu {
+    display: none;
+  }
 }
 
 .burger-bar{
@@ -25,7 +39,6 @@
 }
 
 #list-container {
-  display: flex;
   flex-direction: row;
   list-style: none;
   height: 100%;
