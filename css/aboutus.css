@@ -1,46 +1,35 @@
 /*Titles*/
-html {
-    font-family: "didot";
-}
 
-h2 {
-    font-size: 100px;
-    margin: 0;
-    writing-mode: vertical-lr;
-    text-align: center;
-    line-height: .7;
-}
+h1{
+    text-shadow:   -1px -1px 0 #5a442d,
+    1px -1px 0 #5a442d,
+    -1px 1px 0 #5a442d,
+    1px 1px 0 #5a442d;color:#fff;
+    background: linear-gradient(to right, black,#202020, #383838);
 
-.rotate {
-    transform: rotate(180deg);
-}
+    text-align:center;
 
-.right {
-    display: grid;
-    height: 100vh;
-    justify-content: right;
-    grid-template-columns: max-content max-content;
 }
-
-.left {
-    display: grid;
-    height: 100vh;
-    justify-content: left;
-    grid-template-columns: max-content max-content;
+.title{
+    background: linear-gradient(to right, black,#202020, #383838);
 }
 
 /*Texts*/
 .para{
-    background:black; color:white;
-    text-align:center;
+    color:white;
+    background-color:black;
+
 }
+p{text-align:center}
+
 /*Blank*/
-.blank{ background:white; width:100%;height:120px;}
+.blank{ background:white; width:100%;height:50px;}
 
 /*Img*/
-#img1{
-    float:left;position:relative;
+.img{
+    left:10px;
 }
+
 /*Personal cards */
 
 @import "https://fonts.googleapis.com/css?family=Do+Hyeon";
@@ -56,6 +45,7 @@ h2 {
     display: block;
     clear: both;
     content: '';
+    text-align:center;
 }
 
 .img-responsive {
@@ -70,6 +60,7 @@ h2 {
     padding: 10px;
     font-family: 'Do Hyeon', sans-serif;
     overflow: hidden;
+    text-inline:center;
 }
 .card__collection .cards {
     width: 300px;
@@ -131,7 +122,7 @@ h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
-    background: #0f9bc0;
+    background: black;
     width: 126px;
     height: 55px;
     transform: skewY(5deg);
@@ -212,7 +203,7 @@ h2 {
 .card__collection .cards--two__tri:before {
     border-top: 220px solid transparent;
     border-bottom: 190px solid transparent;
-    border-right: 288px solid #57ccfd;
+    border-right: 288px solid black;
     position: absolute;
     content: '';
     display: block;
@@ -240,7 +231,7 @@ h2 {
     width: 100%;
     position: relative;
     height: 100%;
-    background: #f07306;
+    background: black;
     transform: translateY(200px);
     z-index: 2;
     transition: all .3s ease-in-out;
@@ -321,7 +312,7 @@ h2 {
     line-height: 6rem;
 }
 .card__collection .cards--three__rect-1 .shadow-1 {
-    background: #9b1308;
+    background: black;
     width: 230px;
     height: 100px;
     display: block;
@@ -347,7 +338,7 @@ h2 {
     display: block;
     width: 50px;
     height: 40px;
-    background: #57ccfd;
+    background: black;
     opacity: 1;
     position: absolute;
     left: 500%;
@@ -359,7 +350,7 @@ h2 {
     display: block;
     width: 50px;
     height: 40px;
-    background: #9b1308;
+    background: black;
     opacity: 1;
     position: absolute;
     left: 500%;
@@ -368,7 +359,7 @@ h2 {
     transition-delay: .2s;
 }
 .card__collection .cards--three__rect-2 .shadow-2 {
-    background: #57ccfd;
+    background: black;
     width: 100%;
     height: 100%;
     display: block;
@@ -395,7 +386,7 @@ h2 {
     display: block;
     width: 100%;
     height: 100%;
-    background: #9b1308;
+    background: black;
     border-radius: 50%;
     transform: scale(0);
     transition: all .3s ease;
@@ -416,7 +407,7 @@ h2 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: rgba(87, 204, 253, 0.9);
+    background: white;
     text-align: center;
     line-height: 1.7rem;
     font-size: 12px;
