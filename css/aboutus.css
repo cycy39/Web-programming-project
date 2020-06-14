@@ -1,3 +1,44 @@
+/*header*/
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color:white;
+    margin: 1em;
+    font-family: 'Playfair Display';
+    font-size: 1.5em;
+
+}
+
+#list-container {
+    display: flex;
+}
+#burger-menu {
+    display: none;
+}
+
+.burger-bar {
+    background-color: black;
+}
+
+#list-container {
+    flex-direction: row;
+    list-style: none;
+    height: 100%;
+}
+
+.list-element {
+    height: 100%;color:white;
+}
+
+.list-button {
+    height: 100%;
+    padding: 1em;
+}
+
 /*Titles*/
 
 h1{
