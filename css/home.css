@@ -46,14 +46,24 @@
     right:20px;
 }
 /*Contenu*/
-/*
-#contenu img{
-    width:75%; height:300px;
+#renvoi-page{
+    display:inline-block; position:relative;
 }
 
+.text{
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 70%;
+}
 
-
- */
 /*Footer*/
 #footer{
     width:100%; height:120px;background-color:darkgrey;

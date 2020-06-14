@@ -1,0 +1,118 @@
+/*Font*/
+#body{
+    font-family: 'Merriweather', serif;
+}
+
+/*Woman css page */
+
+
+html {
+    box-sizing: border-box;
+}
+html *,
+html *:after,
+html *:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 1.6;
+    font-family: 'El Messiri', sans-serif;
+}
+body::before {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("https://images2.imgbox.com/79/66/q4b8r0hu_o.jpg") 0 0/cover no-repeat;
+    z-index: -1;
+}
+
+.card {
+    position: relative;
+    max-width: 26.5em;
+    margin: 2rem auto;
+    padding: 2em;
+    background: #fff;
+}
+
+.card__title {
+    margin: 0 auto 1em;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card__img {
+    display: block;
+    width: 20em;
+    max-width: 100%;
+    margin: 1em auto;
+    border-radius: 2px;
+}
+
+.card__text {
+    margin: 2em 5%;
+    color: #646464;
+}
+
+.card__btn {
+    display: table;
+    padding: .7em 4em;
+    background: #ddba76;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1em auto 0;
+}
+
+/**
+ * Card #15
+ */
+.card--15 {
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.card--15 .card__text,
+.card--15 .card__title,
+.card--15 .card__btn,
+.card--15 .card__img {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.card--15:hover {
+    background-color: transparent;
+    background-image: url(https://images2.imgbox.com/d6/9a/BuSUpKAj_o.jpg), url(https://images2.imgbox.com/d6/9a/BuSUpKAj_o.jpg);
+    background-size: cover, 10% 10%;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.card--15:hover .card__title {
+    color: #fff;
+    -webkit-transform: translate3d(0, 220px, 0) scale(1.5);
+    transform: translate3d(0, 220px, 0) scale(1.5);
+}
+.card--15:hover .card__text {
+    color: #fff;
+    -webkit-transform: translate3d(0, -20px, 0) scale(1.2);
+    transform: translate3d(0, -20px, 0) scale(1.2);
+}
+.card--15:hover .card__img {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.card--15:hover .card__btn {
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
