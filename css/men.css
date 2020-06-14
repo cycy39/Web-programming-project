@@ -1,7 +1,178 @@
+body {
+  overflow: hidden;
+}
 
-/*Main of the men page */
+a{
+  text-decoration: none;
+  color: white;
+}
+/*Header*/
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+/*media for responsiveness*/
+
+@media only screen and (max-width: 900px) {
+  #list-container {
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+  }
+  .burger-bar {
+    background-color: white;
+  }
+  
+  body {
+    background: url("../assets/man.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #logo {
+    content:url("../assets/logowhite.png");
+  }
+
+  #profil-pic {
+    content:url("../assets/panierwhite.png")
+  }
+}
+
+@media (min-width: 900px) {
+  #list-container {
+    display: flex;
+  }
+  #burger-menu {
+    display: none;
+  }
+
+  .burger-bar {
+    background-color: black;
+  }
+
+  body {
+    background: url("../assets/watch.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #logo {
+    content:url("../assets/logowhite.png");
+  }
+
+  #profil-pic {
+    content:url("../assets/panierwhite.png")
+  }
+}
+
+/*burger Menu animation*/
+
+#burger-menu div:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#burger-menu div:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#burger-menu input:checked ~ ul
+{
+  transform: none;
+}
+
+#burger-menu input:checked ~ div
+{
+  opacity: 1;
+  transform: translate(0, 8px) rotate(45deg);
+  background: #232323;
+}
+
+#burger-menu input:checked ~ div:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#burger-menu input:checked ~ div:nth-last-child(2)
+{
+  transform: translate(6px, 1px) rotate(-45deg);
+}
+
+/*Burger Menu Style*/
+
+#burger-menu {
+  z-index: 1;
+}
+
+input {
+  position: absolute;
+  width: 27px; height: 22px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.burger-bar {
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#fold-menu {
+  position: absolute;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: -2em;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+
+#logo {
+  height: 50px;
+}
+
+#list-container {
+  flex-direction: row;
+  list-style: none;
+  height: 100%;
+}
+
+.list-element {
+  height: 100%;
+}
+
+.list-button {
+  height: 100%;
+  padding: 1em;
+}
+
+#profil-pic {
+  height: 40px;
+}
+
 .grid-wrap {
     padding: 1%;
 }
@@ -177,16 +348,13 @@
     -o-transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
+    font-family: 'Playfair Display';
 }
 
 body {
     background: black;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, black,#202020, #383838);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, black,#202020, #383838);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display';
 }
 
 h1 {

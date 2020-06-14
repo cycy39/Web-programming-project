@@ -2,6 +2,10 @@ body {
   overflow: hidden;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
 /*Header*/
 
 #header {
@@ -170,7 +174,3 @@ input {
   height: 40px;
 }
 
-#watch-div {
-  width: 100%;
-  height: 300px;
-}
